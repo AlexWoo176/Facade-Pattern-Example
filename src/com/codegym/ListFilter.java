@@ -13,4 +13,14 @@ public class ListFilter {
         }
         return newList;
     }
+
+    public List<Integer> filterEven(List<Integer> numbers){
+        List<Integer> newList = new ArrayList<>();
+        for (Integer number: numbers) {
+            if(number % 2 != 0){
+                newList.add(number);
+            }
+        }
+        return newList;
+    }
 }
